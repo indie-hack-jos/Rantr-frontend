@@ -7,9 +7,10 @@ const page = () => {
             <div className='md:w-[33%]'>
 
                 <header className='text-center'>
-                    <h2 className='text-2xl font-bold mb-2 text-primary'>Rantr</h2>
+                    <h2 className='text-2xl font-bold mb-1 text-primary'>Rantr.</h2>
+                    <h5 className='text-xl text-gray-600'>Hi, new user</h5>
                   
-                    <h5 className='text-xl text-gray-600'>Create an account</h5>
+                    <h5 className='text-xl text-gray-600'>Create your account</h5>
                 </header>
 
                 <form className='flex flex-col gap-2 mt-6 w-full'>
