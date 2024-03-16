@@ -1,10 +1,11 @@
 import React from 'react'
+import { lisu_Bosa } from '../fonts'
 
 export const Sidebar = () => {
   return (
     <div className='h-screen px-6 py-7'>
       <header>
-        <h1 className='text-2xl font-semibold text-primary'>Rantr.</h1>
+        <h1 className={`${lisu_Bosa.className} text-3xl font-semibold text-primary`}>Rantr.</h1>
       </header>
 
       <nav className="w-full h-full mt-24">
