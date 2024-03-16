@@ -1,24 +1,35 @@
 import { Feeds } from "@/components/home/feeds";
+import Modal from "@/components/home/modal";
+import Popular from "@/components/home/popularCard";
 import Nav from "@/components/nav/nav";
 import { HomePageLayout } from "@/layouts/homePageLayout";
 import Image from "next/image";
 
 export default function Home() {
+
   return (
 
-    <main className="min-h-screen">
-    <HomePageLayout>
-        <section className="w-full px-8 py-10 flex gap-10">
+    <main className="bg-[#FAFAFA]">
+      <HomePageLayout>
 
-            <div className="w-2/3 border-r min-h-screen">
-              <Feeds />
-            </div>
-            <div className="w-/3">
-              People
-            </div>
+        <section className="container mx-auto flex gap-6">
+        <Modal />
+
+          <div className="w-2/3 border-r min-h-screen py-6">
+            <Feeds />
+
+          </div>
+
+
+
+          <div className=" w-1/3 pr-6">
+
+            <Popular />
+
+          </div>
         </section>
-    </HomePageLayout>
+      </HomePageLayout>
     </main>
-    
+
   );
 }
