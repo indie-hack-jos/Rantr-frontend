@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import avatar from "../../../public/avatar.png"
+import { raleway } from '../fonts'
 
 export default function Nav() {
     return (
-        <nav className='py-4 border-b bg-white sticky top-0 z-20'>
+        <nav className={` ${raleway.className} py-4 border-b bg-white sticky top-0 z-20`}>
             <div className="hidden container mx-auto md:flex justify-between items-center px-6">
                 <ul className="flex items-center gap-6 font-semiboldw-1/3">
                     <li className='text-primary bg-primary bg-opacity-20 py-2 px-4 rounded-full'>Rants</li>
@@ -64,8 +65,8 @@ export default function Nav() {
                     </div>
                 </div>
 
-                <div className="flex justify-between text-primary px-3 py-2">
-                    <div className='py-1 px-3 bg-primary bg-opacity-30 rounded-full'>Rants</div>
+                <div className="flex justify-between text-primary px-6 pt-2 text-sm">
+                    <div className='py-1 vpx-3 bg-primary bg-opacity-30 rounded-full'>Rants</div>
                     <div>People</div>
                     <div>Community</div>
                 </div>

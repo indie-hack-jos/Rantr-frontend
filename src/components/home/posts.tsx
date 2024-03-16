@@ -1,5 +1,7 @@
 import React from 'react'
 import profileImg from "../../../public/goody.jpeg"
+import { raleway } from '../fonts'
+
 export default function Posts() {
     interface rants {
         username: string,
@@ -17,8 +19,8 @@ export default function Posts() {
     ]
     return (
         <section className='w-full flex flex-col gap-4 mt-6 px-2'>
-                {rants.map((rant) => (
-                    <div className="postcard bg-white border rounded-lg py-5 px-10">
+                {rants.map((rant, index) => (
+                    <div className="postcard bg-white border rounded-lg py-5 px-10" key={index}>
                 <header className='flex items-center gap-4'>
                     <div className="avatar h-12 w-12 rounded-full bg-gray-200">
                         <img src={profileImg.src} className='h-full w-full object-cover rounded-full' alt="" />
@@ -35,7 +37,7 @@ export default function Posts() {
                 </header>
 
                 <div className="rant-body py-4 md:w-2/3">
-                    <p>
+                    <p className='text-gray-600'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.
                     </p>
                 </div>
