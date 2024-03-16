@@ -8,15 +8,17 @@ interface LayoutProps {
 
 export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
   return (
-    <main className='w-full flex'>
+    <main className='w-full md:flex'>
 
     
-        <div className="w-52 h-screen max-h-screen overflow-hidden bg-white border border-r sticky left-0 top-0 ">
+        <div className="hidden md:flex w-52 h-screen max-h-screen overflow-hidden bg-white border border-r sticky left-0 top-0 ">
             <Sidebar />
         </div>
 
         <div className="grow">
             <Nav />
+
+          
             {children}
         </div>
    

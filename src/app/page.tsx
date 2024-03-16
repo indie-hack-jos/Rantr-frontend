@@ -9,20 +9,20 @@ export default function Home() {
 
   return (
 
-    <main className="bg-[#FAFAFA]">
+    <main className="bg-[#FAFAFA] w-full">
       <HomePageLayout>
 
-        <section className="container mx-auto flex gap-6">
+        <section className="container mx-auto gap-6 md:flex ">
         <Modal />
 
-          <div className="w-2/3 border-r min-h-screen py-6">
+          <div className="md:w-2/3 w-full min-h-screen py-6">
             <Feeds />
 
           </div>
 
 
 
-          <div className=" w-1/3 pr-6">
+          <div className="md:w-1/3 pr-6">
 
             <Popular />
 

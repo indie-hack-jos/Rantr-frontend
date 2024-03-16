@@ -3,22 +3,22 @@ import avatar from "../../../public/avatar.png"
 export default function FeedHeader() {
 
     return (
-        <header className="w-full bg-white px-12 py-6 border rounded-lg">
+        <header className="w-full bg-white px-3 py-6 border md:rounded-lg md:px-12">
 
 
             <div className="flex gap-6 items-center justify-center">
                 <div className="profile">
-                    <div className="h-14 w-14 rounded-full">
-                        <img src={avatar.src} className="rounded-full" alt="" />
+                    <div className="h-12 w-12 rounded-full">
+                        <img src={avatar.src} className="h-full w-full rounded-full" alt="" />
                     </div>
                 </div>
-                <div className="border h-[4.5rem] rounded-md grow flex items-center px-4">
-                    <div className="text-gray-400">Rant About somthing...</div>
+                <div className="border h-[4rem] rounded-md grow flex items-center px-4">
+                    <div className="text-gray-400 text-sm">Rant About somthing...</div>
                 </div>
 
 
             </div>
-            <div className="flex items-center justify-between mt-3">
+            <div className="flex items-center justify-between mt-3 px-3">
                 <div className="text-primary">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

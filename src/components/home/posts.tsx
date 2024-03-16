@@ -16,7 +16,7 @@ export default function Posts() {
         {username: "Tobi Dev", bio: "Backend Dev | thoughts", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 1},
     ]
     return (
-        <section className='flex flex-col gap-4 mt-6'>
+        <section className='w-full flex flex-col gap-4 mt-6 px-2'>
                 {rants.map((rant) => (
                     <div className="postcard bg-white border rounded-lg py-5 px-10">
                 <header className='flex items-center gap-4'>
@@ -34,7 +34,7 @@ export default function Posts() {
 
                 </header>
 
-                <div className="rant-body w-2/3 py-4">
+                <div className="rant-body py-4 md:w-2/3">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.
                     </p>

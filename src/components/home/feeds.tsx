@@ -4,10 +4,10 @@ import Posts from './posts'
 
 export const Feeds = () => {
   return (
-    <div className='w-full px-8'>
+    <div className='w-full md:px-8'>
         <FeedHeader />
         <Posts />
-        
+
     </div>
   )
 }

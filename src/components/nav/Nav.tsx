@@ -4,7 +4,7 @@ import avatar from "../../../public/avatar.png"
 export default function Nav() {
     return (
         <nav className='py-4 border-b bg-white sticky top-0 z-20'>
-            <div className="container mx-auto flex justify-between items-center px-6">
+            <div className="hidden container mx-auto md:flex justify-between items-center px-6">
                 <ul className="flex items-center gap-6 font-semiboldw-1/3">
                     <li className='text-primary bg-primary bg-opacity-20 py-2 px-4 rounded-full'>Rants</li>
                     <li className=''>People</li>
@@ -38,6 +38,40 @@ export default function Nav() {
 
 
             </div>
+
+            {/* mobile nav */}
+
+            <div className="flex flex-col md:hidden px-3 gap-4">
+                <div className="flex justify-between items-center">
+
+                    <h1 className='text-lg'>Rantr.</h1>
+
+
+                    <div className="flex gap-4 items-center">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+
+                        </span>
+
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+
+                <div className="flex justify-between text-primary px-3 py-2">
+                    <div className='py-1 px-3 bg-primary bg-opacity-30 rounded-full'>Rants</div>
+                    <div>People</div>
+                    <div>Community</div>
+                </div>
+
+            </div>
+
         </nav >
     )
 }
