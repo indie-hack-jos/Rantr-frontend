@@ -20,9 +20,9 @@ export default function Posts() {
     return (
         <section className='w-full flex flex-col gap-4 mt-6 px-2'>
                 {rants.map((rant, index) => (
-                    <div className="postcard bg-white border rounded-lg py-5 px-10" key={index}>
+                    <div className="postcard bg-white rounded-lg py-5 md:py-5 px-6 md:px-10" key={index}>
                 <header className='flex items-center gap-4'>
-                    <div className="avatar h-12 w-12 rounded-full bg-gray-200">
+                    <div className="avatar h-[2.5rem] w-[2.5rem] rounded-full bg-gray-200">
                         <img src={profileImg.src} className='h-full w-full object-cover rounded-full' alt="" />
                     </div>
 
@@ -37,13 +37,13 @@ export default function Posts() {
                 </header>
 
                 <div className="rant-body py-4 md:w-2/3">
-                    <p className='text-gray-600'>
+                    <p className='text-gray-500'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.
                     </p>
                 </div>
 
 
-                <footer className="card-footer flex justify-between py-4">
+                <footer className="card-footer flex justify-between pt-4">
                     <div className='flex items-center cursor-pointer'>
                         <span className='hover:bg-red-500 p-1 rounded-full hover:bg-opacity-40 '>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">

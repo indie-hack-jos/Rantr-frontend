@@ -42,7 +42,7 @@ export default function Nav() {
 
             {/* mobile nav */}
 
-            <div className="flex flex-col md:hidden px-3 gap-4">
+            <div className="flex flex-col md:hidden px-5 gap-6">
                 <div className="flex justify-between items-center">
 
                     <h1 className='text-lg'>Rantr.</h1>
