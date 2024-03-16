@@ -1,4 +1,4 @@
-import Nav from '@/components/nav/nav';
+import Nav from '@/components/nav/Nav';
 import { Sidebar } from '@/components/nav/sidebar'
 import React, { FC } from 'react'
 

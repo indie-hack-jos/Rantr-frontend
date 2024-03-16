@@ -1,9 +1,8 @@
 import { Feeds } from "@/components/home/feeds";
 import Modal from "@/components/home/modal";
 import Popular from "@/components/home/popularCard";
-import Nav from "@/components/nav/nav";
 import { HomePageLayout } from "@/layouts/homePageLayout";
-import Image from "next/image";
+
 
 export default function Home() {
 

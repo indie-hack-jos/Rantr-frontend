@@ -65,8 +65,8 @@ export default function Nav() {
                     </div>
                 </div>
 
-                <div className="flex justify-between text-primary px-6 pt-2 text-sm">
-                    <div className='py-1 vpx-3 bg-primary bg-opacity-30 rounded-full'>Rants</div>
+                <div className="flex justify-between text-primary px-6 pyt-2 text-sm">
+                    <div className='py-1 px-3 bg-primary bg-opacity-30 rounded-full '>Rants</div>
                     <div>People</div>
                     <div>Community</div>
                 </div>
