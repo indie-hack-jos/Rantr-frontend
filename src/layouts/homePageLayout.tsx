@@ -19,10 +19,10 @@ export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
 
   return (
     <main className='w-full md:flex'>
-            <Modal modalOpen={modalOpen} />
+            <Modal modalOpen={modalOpen} handleModal={handleModal}  />
     
         <div className="hidden md:flex w-56 px-4 h-screen max-h-screen overflow-hidden bg-white border border-r sticky left-0 top-0 ">
-            <Sidebar handleModal={handleModal} />
+            <Sidebar handleModal={handleModal}  />
         </div>
 
         <div className="grow">
@@ -39,7 +39,7 @@ export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
 
 
 
-      <div className="md:w-1/3 pr-6 static border-l">
+      <div className="md:w-1/3  pr-6 static border-l">
 
         <Popular />
 

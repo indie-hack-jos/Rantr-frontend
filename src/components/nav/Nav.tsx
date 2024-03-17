@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import avatar from "../../../public/avatar.png"
-import { raleway } from '../fonts'
+import { raleway, quicksand } from '../fonts'
 
 export default function Nav() {
     return (
-        <nav className={`py-6 shadow bg-white sticky top-0 z-20`}>
+        <nav className={`${quicksand.className} pt-3 pb-2 md:py-6 shadow bg-white sticky top-0 z-20`}>
             <div className="hidden container mx-auto md:flex justify-between items-center px-6">
                 <ul className="flex items-center gap-6 font-semiboldw-1/3">
                     <li className='text-primary bg-primary bg-opacity-20 py-2 px-4 rounded-full'>Rants</li>
@@ -51,19 +51,19 @@ export default function Nav() {
             <div className="flex flex-col md:hidden px-6 gap-6">
                 <div className="flex justify-between items-center">
 
-                    <h1 className='text-lg font-semibold'>Rantr.</h1>
+                    <h1 className='text-xl font-semibold'>Rantr.</h1>
 
 
                     <div className="flex gap-4 items-center">
                         <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                             </svg>
 
                         </span>
 
                         <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
 
@@ -71,7 +71,7 @@ export default function Nav() {
                     </div>
                 </div>
 
-                <div className="flex justify-between text-primary px-6 pyt-2 text-sm">
+                <div className={`flex justify-between text-primary px-6 pt-2 text-sm ${quicksand.className}`}>
                     <div className='py-1 px-3 bg-primary bg-opacity-30 rounded-full font-semibold'>Rants</div>
                     <div className='text-gray-400'>People</div>
                     <div className='text-gray-400'>Community</div>

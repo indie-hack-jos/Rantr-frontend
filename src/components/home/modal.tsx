@@ -1,8 +1,9 @@
 import React from 'react'
 import { raleway } from '../fonts'
 
-export default function Modal({ modalOpen }: {
-    modalOpen: boolean
+export default function Modal({ modalOpen, handleModal }: {
+    modalOpen: boolean,
+    handleModal: VoidFunction
 }) {
     return (
         <div className={`${modalOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} fixed h-screen w-full bg-black z-30 bg-opacity-60 backdrop-blur-sm transition-opacity duration-150 ease-in-out`}>
@@ -11,7 +12,7 @@ export default function Modal({ modalOpen }: {
 
                 <div className="bg-white w-full h-full flex flex-col justify-center md:h-auto md:w-[40%] p-6 md:p-10 rounded-md">
                        <div className="py-6">
-                       <span className="py-1 px-3 bg-gray-100 rounded-lg text-sm inline-flex gap-2">
+                       <span className="py-1 px-3 bg-gray-100 rounded-lg text-sm inline-flex gap-2" onClick={handleModal}>
                             Back
                         </span>
                        </div>
