@@ -1,35 +1,40 @@
 import React from 'react'
 import profileImg from "../../../public/goody.jpeg"
+import profileImg2 from "../../../public/kty.jpg"
 import { raleway } from '../fonts'
+import Link from 'next/link'
 
 export default function Posts() {
     interface rants {
         username: string,
         bio: string,
         post: string,
-        likes: number
+        likes: number,
+        avatar: string
     }
 
     const rants: rants[] = [
-        {username: "Goody_Ezeokafor", bio: "Sofwtare engineer | founder", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 2},
+        {username: "Goody_Ezeokafor", bio: "Software engineer | founder", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 2, avatar: profileImg.src},
 
-        {username: "Ola of jos", bio: "Here to rant | junior fullstack", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 3},
+        {username: "Ola of jos", bio: "Here to rant | junior fullstack", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 3, avatar: profileImg2.src},
 
-        {username: "Tobi Dev", bio: "Backend Dev | thoughts", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 1},
+        {username: "Tobi Dev", bio: "Backend Dev | thoughts", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 1, avatar: profileImg.src},
     ]
     return (
         <section className='w-full flex flex-col gap-4 mt-6 px-2'>
                 {rants.map((rant, index) => (
-                    <div className="postcard bg-white rounded-lg py-5 md:py-5 px-6 md:px-10" key={index}>
+                    <div className="postcard bg-white rounded-lg py-5 md:py-5 px-4 cursor-pointer md:px-10" key={index}>
+
+                        <Link href={`post/${index}`}>
                 <header className='flex items-center gap-4'>
                     <div className="avatar h-[2.5rem] w-[2.5rem] rounded-full bg-gray-200">
-                        <img src={profileImg.src} className='h-full w-full object-cover rounded-full' alt="" />
+                        <img src={rant.avatar} className='h-full w-full object-cover rounded-full' alt="" />
                     </div>
 
-                    <div className="user-data flex-col">
-                        <h5>{rant.username}</h5>
-                        <p className="text-sm text-gray-400">{rant.bio}</p>
-                        <p className="text-sm text-gray-400">10hours ago</p>
+                    <div className="user-data flex-col ">
+                        <h5 className='text-sm'>{rant.username}</h5>
+                        <p className="text-xs text-gray-400">{rant.bio}</p>
+                        <p className="text-xs text-gray-400">10hours ago</p>
 
                     </div>
 
@@ -37,8 +42,8 @@ export default function Posts() {
                 </header>
 
                 <div className="rant-body py-4 md:w-2/3">
-                    <p className='text-gray-500'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.
+                    <p className='text-gray-500 text-[15px] tracking-normal'>
+                        {rant.post}
                     </p>
                 </div>
 
@@ -74,6 +79,8 @@ export default function Posts() {
 
                     </div>
                 </footer>
+
+                </Link>
             </div>
 
                 ))}

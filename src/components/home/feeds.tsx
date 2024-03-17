@@ -1,6 +1,6 @@
 import React from 'react'
 import FeedHeader from './header'
-import Posts from './posts'
+import Posts from '../post/posts'
 
 export const Feeds = () => {
   return (
