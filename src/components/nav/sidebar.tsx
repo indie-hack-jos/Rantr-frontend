@@ -1,5 +1,6 @@
 import React from 'react'
 import { lisu_Bosa } from '../fonts'
+import Link from 'next/link'
 
 export const Sidebar = ({handleModal}:{
   handleModal: VoidFunction
@@ -66,7 +67,7 @@ export const Sidebar = ({handleModal}:{
           </li>
 
             <li className='py-4'>
-                <button className='py-2.5 px-6 text-white bg-primary rounded-lg' onClick={handleModal}>Signin</button>
+               <Link href="/auth/signin"> <button className='py-2.5 px-6 text-white bg-primary rounded-lg'>Signin</button></Link>
             </li>
         </ul>
       </nav>
