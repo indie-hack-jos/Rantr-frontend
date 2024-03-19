@@ -1,7 +1,11 @@
 import React from 'react'
 
-export const page = () => {
+const Page = () => {
   return (
-    <div></div>
+    <main>
+        Auth page oo
+    </main>
   )
 }
+
+export default Page

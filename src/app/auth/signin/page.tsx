@@ -2,7 +2,12 @@ import Link from "next/link"
 
 const page = () => {
     return (
-      <main className='container mx-auto h-screen flex justify-center items-center'>
+      <main className='container mx-auto h-screen flex flex-col gap-4 justify-center items-center'>
+
+            <header className="md:w-[30%] w-full mb-4 md:text-center">
+                <h1 className="text-2xl font-bold">Sign In</h1>
+                <p className="text-gray-600">Please fill in your details to continue</p>
+            </header>
           <form className='md:w-[30%] flex flex-col gap-2'>
           <div className="w-full">
             <label className="text-gray-500">Username/email</label>
