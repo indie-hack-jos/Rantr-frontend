@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { raleway } from '../fonts'
 
@@ -47,6 +48,8 @@ export default function Modal({ modalOpen, handleModal }: {
                         <button className=" p-3 w-full bg-primary text-white rounded">Sign in</button>
                         <p className={`${raleway.className} text-sm cursor-pointer`}>Dont have an account? <span className='text-primary'>Siginup</span></p>
                     </form>
+
+
 
                 </div>
             </div>

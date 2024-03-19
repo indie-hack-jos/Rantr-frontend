@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function Popular() {
   return (
-    <aside className="static top-0 left-0 h-screen max-h-screen overflow-hidden py-6">
-    <div className="card hidden md:flex flex-col p-5 bg-white shadow rounded-lg">
+    <aside className="grow h-screen max-h-screen overflow-hidden py-6">
+    <div className="card  w-full flex-col p-5 bg-white shadow rounded-lg">
         <h3 className="text-lg">Popular Ranters</h3>
 
         <div className="flex flex-col gap-6 py-4 text-sm">
-            <div className="flex justify-between ">
+            <div className="flex  gap-28">
                 <div className="flex items-center gap-4">
                     <span className="h-10 w-10 bg-slate-900 rounded-full"></span>
                     <div>

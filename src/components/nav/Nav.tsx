@@ -5,8 +5,8 @@ import { raleway, quicksand } from '../fonts'
 export default function Nav() {
     return (
         <nav className={`${quicksand.className} pt-3 pb-2 md:py-6 shadow bg-white sticky top-0 z-20`}>
-            <div className="hidden container mx-auto md:flex justify-between items-center px-6">
-                <ul className="flex items-center gap-6 font-semiboldw-1/3">
+            <div className="hidden container mx-auto md:flex justify-between items-center px-6 ">
+                <ul className="flex items-center gap-6 w-1/3">
                     <li className='text-primary bg-primary bg-opacity-20 py-2 px-4 rounded-full'>Rants</li>
                     <li className='text-gray-400'>People</li>
                     <li className='text-gray-400'>Community</li>

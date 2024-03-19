@@ -39,7 +39,7 @@ export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
 
 
 
-      <div className="md:w-1/3  pr-6 static border-l">
+      <div className="md:grow">
 
         <Popular />
 
