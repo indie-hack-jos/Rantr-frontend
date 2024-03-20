@@ -30,7 +30,7 @@ export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
             <Nav />
 
           
-            <section className="w-full max-w-full md:container mx-auto md:flex gap-4">
+            <section className="w-full max-w-full md:container mx-auto md:flex gap-8">
       
 
       <div className={`${raleway.className} md:w-2/3 min-h-screen py-6`}>
@@ -40,9 +40,11 @@ export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
 
 
 
-      <div className="md:w-1/3 hidden md:flex relative">
+      <div className="md:w-1/3 hidden md:flex flex-col relative">
 
         <Popular />
+      
+
 
       </div>
     </section>

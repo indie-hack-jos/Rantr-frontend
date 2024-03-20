@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Popular() {
   return (
-    <aside className="grow h-screen max-h-screen overflow-hidden py-6 static right-0">
+    <aside className="sticky top-20 py-6 ">
     <div className="card  w-full flex-col p-5 bg-white border shadow rounded-lg">
         <h3 className="text-lg">Popular Ranters</h3>
 
