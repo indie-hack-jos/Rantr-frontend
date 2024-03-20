@@ -4,7 +4,7 @@ import Posts from '../post/posts'
 
 export const Feeds = () => {
   return (
-    <div className='w-full md:px-8'>
+    <div className='w-full'>
         <FeedHeader />
         <Posts />
 

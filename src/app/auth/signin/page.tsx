@@ -8,7 +8,7 @@ const page = () => {
                 <h1 className="text-2xl font-bold">Sign In</h1>
                 <p className="text-gray-600">Please fill in your details to continue</p>
             </header>
-          <form className='md:w-[30%] flex flex-col gap-2'>
+          <form className='md:w-[35%] flex flex-col gap-3'>
           <div className="w-full">
             <label className="text-gray-500">Username/email</label>
               <input type="text" className='w-full py-3 px-3 rounded border border-primary focus:outline-none' placeholder="johndoe@gmail.com" />

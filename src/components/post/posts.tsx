@@ -4,6 +4,7 @@ import profileImg2 from "../../../public/kty.jpg"
 import { raleway } from '../fonts'
 import Link from 'next/link'
 
+
 export default function Posts() {
     interface rants {
         username: string,
@@ -21,9 +22,9 @@ export default function Posts() {
         {username: "Tobi Dev", bio: "Backend Dev | thoughts", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 1, avatar: profileImg.src},
     ]
     return (
-        <section className='w-full flex flex-col gap-4 mt-6 px-2'>
+        <section className='w-full px-2 flex flex-col gap-4 mt-6 md:px-0'>
                 {rants.map((rant, index) => (
-                    <div className="postcard bg-white rounded-lg py-5 md:py-5 px-4 cursor-pointer md:px-10" key={index}>
+                    <div className="postcard bg-white rounded-lg py-5 md:py-5 px-4 cursor-pointer border md:px-10" key={index}>
 
                         <Link href={`post/${index}`}>
                 <header className='flex items-center gap-4'>
@@ -31,10 +32,10 @@ export default function Posts() {
                         <img src={rant.avatar} className='h-full w-full object-cover rounded-full' alt="" />
                     </div>
 
-                    <div className="user-data flex-col ">
-                        <h5 className='text-sm'>{rant.username}</h5>
-                        <p className="text-xs text-gray-400">{rant.bio}</p>
-                        <p className="text-xs text-gray-400">10hours ago</p>
+                    <div className="user-data flex-col">
+                        <h5 className=''>{rant.username}</h5>
+                        <p className="text-sm text-gray-500">{rant.bio}</p>
+                        <p className="text-sm text-gray-500">10hours ago</p>
 
                     </div>
 
@@ -42,7 +43,7 @@ export default function Posts() {
                 </header>
 
                 <div className="rant-body py-4 md:w-2/3">
-                    <p className='text-gray-500 text-[15px] tracking-normal'>
+                    <p className='text-[15px] tracking-wide'>
                         {rant.post}
                     </p>
                 </div>

@@ -1,13 +1,10 @@
-'use client'
-import Link from "next/link"
+import Link from 'next/link'
+import React from 'react'
 
-const page = () => {
-    const step = 1
-    
+const Step1 = () => {
   return (
-    <main className='container mx-auto h-screen flex flex-col gap-5 justify-center items-center'>
-
-        <header className="w-full md:w-[40%]">
+    <div className='w-full md:w-[40%]'>
+        <header className="w-full">
             <p className="text-sm text-gray-500">Hey, welcome</p>
             <h1 className="text-2xl font-bold">Let Sign You Up</h1>
         </header>
@@ -15,12 +12,12 @@ const page = () => {
             <label>Email</label>
             <input type="text" className='w-full py-3 px-3 rounded border border-primary focus:outline-none' placeholder="johndoe@gmail.com" />
 
-            <button className="bg-primary py-3 w-full rounded text-secondary-foreground ">Submit</button>
+            <button className="bg-primary py-3 w-full rounded text-secondary ">Submit</button>
             <Link href="/auth/signin">  <p>Already have an account? <span className='text-primary font-semibold'>Sign in</span> instead</p></Link>
 
         </form>
-    </main>
+    </div>
   )
 }
 
-export default page
+export default Step1

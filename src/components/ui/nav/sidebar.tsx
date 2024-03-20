@@ -1,14 +1,15 @@
 import React from 'react'
-import { lisu_Bosa } from '../fonts'
+import { lisu_Bosa } from '../../fonts'
 import Link from 'next/link'
+import { quicksand } from '../../fonts'
 
 export const Sidebar = ({handleModal}:{
   handleModal: VoidFunction
 }) => {
   return (
-    <div className='h-screen w-full pl-2 px-7 py-7'>
+    <div className='h-screen w-full min-w-full pl-2 px-7 py-7'>
       <header>
-        <h1 className={`text-2xl font-semibold text-primary`}>Rantr.</h1>
+        <h1 className={`${quicksand.className} text-2xl font-semibold text-primary`}>Rantr.</h1>
       </header>
 
       <nav className="w-full h-full mt-24">

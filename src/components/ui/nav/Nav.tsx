@@ -1,13 +1,13 @@
 import Link from 'next/link'
-import avatar from "../../../public/avatar.png"
-import { raleway, quicksand } from '../fonts'
+import avatar from "../../../../public/avatar.png"
+import { raleway, quicksand } from '../../fonts'
 
 export default function Nav() {
     return (
         <nav className={`${quicksand.className} pt-3 pb-2 md:py-6 shadow bg-white sticky top-0 z-20`}>
             <div className="hidden container mx-auto md:flex justify-between items-center px-6 ">
                 <ul className="flex items-center gap-6 w-1/3">
-                    <li className='text-primary bg-primary bg-opacity-20 py-2 px-4 rounded-full'>Rants</li>
+                    <li className='text-primary bg-primary-foreground bg-opacity-20 py-2 px-4 rounded-full font-semibold'>Rants</li>
                     <li className='text-gray-400'>People</li>
                     <li className='text-gray-400'>Community</li>
                 </ul>
@@ -20,7 +20,7 @@ export default function Nav() {
                             </svg>
 
                         </span>
-                        <input type="text" className='py-3 border-none bg-primary bg-opacity-15 rounded-lg w-full px-10 focus:outline-primary text-gray-400 text-sm' placeholder='What are you looking for' />
+                        <input type="text" className='py-3 border-none bg-secondary bg-opacity-15 rounded-lg w-full px-10 focus:outline-primary text-gray-400 text-sm' placeholder='What are you looking for' />
                     </form>
                 </div>
                 <div className='flex gap-4 cursor-pointer'>
@@ -72,9 +72,9 @@ export default function Nav() {
                 </div>
 
                 <div className={`flex justify-between text-primary px-6 pt-2 text-sm ${quicksand.className}`}>
-                    <div className='py-1 px-3 bg-primary bg-opacity-30 rounded-full font-semibold'>Rants</div>
-                    <div className='text-gray-400'>People</div>
-                    <div className='text-gray-400'>Community</div>
+                    <div className='py-1 px-3 bg-primary-foreground bg-opacity-30 rounded-full font-semibold'>Rants</div>
+                    <div className='text-gray-500'>People</div>
+                    <div className='text-gray-500'>Community</div>
                 </div>
 
             </div>
