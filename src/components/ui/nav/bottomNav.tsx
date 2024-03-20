@@ -5,8 +5,8 @@ export const BottomNav = ({handleModal}:{
     handleModal: VoidFunction
 }) => {
     return (
-        <footer className="fixed w-full bottom-0 bg-white border-t py-3 md:hidden">
-            <div className="container mx-auto flex items-center justify-evenly">
+        <footer className="sticky w-full px-4 bottom-0 bg-white border-t py-3 md:hidden">
+            <div className="container mx-auto flex items-center justify-between">
 
                 <div className='flex flex-col justify-center items-center text-primary'>
 

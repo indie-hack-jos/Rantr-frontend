@@ -3,16 +3,16 @@ import avatar from "../../../public/avatar.png"
 export default function FeedHeader() {
 
     return (
-        <header className="w-full bg-white px-10 py-6 md:rounded-lg md:px-12">
+        <header className="w-full bg-white py-6 md:rounded-lg px-3 md:px-8">
 
 
             <div className="flex gap-6 items-center justify-center">
                 <div className="profile">
-                    <div className="h-12 w-12 rounded-full">
+                    <div className="h-10 w-10 md:h-12 md:w-12 rounded-full">
                         <img src={avatar.src} className="h-full w-full rounded-full" alt="" />
                     </div>
                 </div>
-                <textarea rows={1} className="border border-gray-400 rounded-md grow flex items-center p-4 focus:outline-none text-sm" placeholder="Whats on your mind..">
+                <textarea rows={2} className="border border-gray-400 rounded-md grow flex items-center p-3 focus:outline-none text-sm" placeholder="Whats on your mind..">
                 
                 </textarea>
 

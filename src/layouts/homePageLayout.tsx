@@ -40,7 +40,7 @@ export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
 
 
 
-      <div className="md:w-1/3 relative">
+      <div className="md:w-1/3 hidden md:flex relative">
 
         <Popular />
 

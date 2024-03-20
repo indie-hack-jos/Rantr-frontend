@@ -33,7 +33,7 @@ export default function Posts() {
                     </div>
 
                     <div className="user-data flex-col">
-                        <h5 className=''>{rant.username}</h5>
+                        <h5 className='font-semibold'>{rant.username}</h5>
                         <p className="text-sm text-gray-500">{rant.bio}</p>
                         <p className="text-sm text-gray-500">10hours ago</p>
 

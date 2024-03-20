@@ -9,7 +9,7 @@ const Post = () => {
                 </div>
 
                 <div className="user-data flex-col">
-                    <h5 className=''>Goody Ezeokafor</h5>
+                    <h5 className='font-[400]'>Goody Ezeokafor</h5>
                     <p className="text-sm text-gray-500">Enginering lead at changera</p>
                     <p className="text-sm text-gray-500">10hours ago</p>
 
