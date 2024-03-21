@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Progress } from "@/components/ui/progress"
 import { poppins, raleway } from "@/components/fonts"
 
-const page = () => {
+const Page = () => {
 
   const [step, setStep] = useState<number>(22)
 
@@ -51,4 +51,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
