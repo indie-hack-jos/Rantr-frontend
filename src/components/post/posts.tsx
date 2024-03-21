@@ -1,7 +1,7 @@
 import React from 'react'
 import profileImg from "../../../public/goody.jpeg"
 import profileImg2 from "../../../public/kty.jpg"
-import { raleway } from '../fonts'
+import { open_sans, quicksand, raleway, roboto } from '../fonts'
 import Link from 'next/link'
 
 
@@ -21,6 +21,7 @@ export default function Posts() {
 
         {username: "Tobi Dev", bio: "Backend Dev | thoughts", post: " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos magnam ab inventore enim autem tempora a perspiciatis porro vero earum.", likes: 1, avatar: profileImg.src},
     ]
+
     return (
         <section className='w-full px-2 flex flex-col gap-4 mt-6 md:px-0'>
                 {rants.map((rant, index) => (
@@ -33,7 +34,7 @@ export default function Posts() {
                     </div>
 
                     <div className="user-data flex-col">
-                        <h5 className='font-semibold'>{rant.username}</h5>
+                        <h5 className='text-primary'>{rant.username}</h5>
                         <p className="text-sm text-gray-500">{rant.bio}</p>
                         <p className="text-sm text-gray-500">10hours ago</p>
 
@@ -43,7 +44,7 @@ export default function Posts() {
                 </header>
 
                 <div className="rant-body py-4 md:w-2/3">
-                    <p className='text-[15px] tracking-wide'>
+                    <p className={`${roboto.className} tracking-wide`}>
                         {rant.post}
                     </p>
                 </div>

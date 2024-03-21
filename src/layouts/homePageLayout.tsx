@@ -5,7 +5,7 @@ import Nav from '@/components/ui/nav/Nav';
 import { BottomNav } from '@/components/ui/nav/bottomNav';
 import { Sidebar } from '@/components/ui/nav/sidebar'
 import React, { FC, useState } from 'react'
-import { raleway } from '@/components/fonts';
+import { raleway, poppins } from '@/components/fonts';
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -33,7 +33,7 @@ export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
             <section className="w-full max-w-full md:container mx-auto md:flex gap-8">
       
 
-      <div className={`${raleway.className} md:w-2/3 min-h-screen py-6`}>
+      <div className={`md:w-2/3 min-h-screen py-6 border-r pr-6`}>
         
             {children}
       </div>
