@@ -20,7 +20,7 @@ const Post = () => {
             </header>
 
 
-            <div className={`${open_sans.className} post-body mt-4 tracking-wide leading-relaxed text-primary`}>
+            <div className={`${open_sans.className} text-[15px] post-body mt-4 tracking-wide leading-relaxed text-primary`}>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod beatae fugit, necessitatibus vitae vel quae illo dignissimos ullam. Sed, laudantium. Rerum fugit hic itaque sapiente, perspiciatis exercitationem laboriosam iusto necessitatibus sequi, amet expedita eos ullam adipisci nulla vero molestiae magni ipsam aperiam ea ex quisquam molestias. Quod, ipsam incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatum, veritatis nam nesciunt obcaecati eos quas ab voluptas similique hic?</p>
 
 
