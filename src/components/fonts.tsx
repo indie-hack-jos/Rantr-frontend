@@ -5,7 +5,10 @@ import { Lisu_Bosa } from "next/font/google";
 
 // export const inter = Inter({ subsets: ['latin'] });
 
-export const raleway = Raleway({ subsets: ['latin'] })
+export const raleway = Raleway({
+    weight: ['400', '700'],
+    subsets: ['latin'],
+})
 
 export const quicksand = Quicksand({
     weight: ['400', '700'],

@@ -1,7 +1,7 @@
 import React from 'react'
 import profileImg from "../../../public/goody.jpeg"
 import profileImg2 from "../../../public/kty.jpg"
-import { open_sans, quicksand, raleway, roboto } from '../fonts'
+import { open_sans, poppins, quicksand, raleway, roboto } from '../fonts'
 import Link from 'next/link'
 
 
@@ -25,7 +25,7 @@ export default function Posts() {
     return (
         <section className='w-full px-2 flex flex-col gap-4 mt-6 md:px-0'>
                 {rants.map((rant, index) => (
-                    <div className="postcard bg-white rounded-lg py-5 md:py-5 px-4 cursor-pointer border md:px-10" key={index}>
+                    <div className="postcard rounded-lg bg-white py-5 md:py-5 px-4 cursor-pointer md:px-10" key={index}>
 
                         <Link href={`post/${index}`}>
                 <header className='flex items-center gap-4'>
@@ -44,7 +44,7 @@ export default function Posts() {
                 </header>
 
                 <div className="rant-body py-4 md:w-2/3">
-                    <p className={`${roboto.className} tracking-wide`}>
+                    <p className={`${open_sans.className} text-[15px] text-gray-700 tracking-wide`}>
                         {rant.post}
                     </p>
                 </div>

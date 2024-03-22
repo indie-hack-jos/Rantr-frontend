@@ -33,7 +33,7 @@ export const HomePageLayout: FC<LayoutProps> = ({ children }) => {
             <section className="w-full max-w-full md:container mx-auto md:flex gap-8">
       
 
-      <div className={`md:w-2/3 min-h-screen py-6 border-r pr-6`}>
+      <div className={`md:w-2/3 min-h-screen py-6 border-r md:pr-6`}>
         
             {children}
       </div>

@@ -4,7 +4,7 @@ import { raleway, quicksand } from '../../fonts'
 
 export default function Nav() {
     return (
-        <nav className={`${quicksand.className} pt-3 pb-2 md:py-6 shadow bg-white sticky top-0 z-20`}>
+        <nav className={`${quicksand.className} py-5 md:py-6 shadow bg-white sticky top-0 z-20`}>
             <div className="hidden container mx-auto md:flex justify-between items-center px-6 ">
                 <ul className="flex items-center gap-6 w-1/3">
                     <li className='text-primary bg-primary-foreground py-2 px-4 rounded-full font-semibold'>Rants</li>
@@ -48,7 +48,7 @@ export default function Nav() {
 
             {/* mobile nav */}
 
-            <div className="flex flex-col md:hidden px-6 pt-1 gap-6">
+            <div className="flex flex-col md:hidden px-6 gap-6">
                 <div className="flex justify-between items-center">
 
                     <h1 className='text-xl font-semibold'>Rantr.</h1>
@@ -78,11 +78,7 @@ export default function Nav() {
                     </div>
                 </div>
 
-                <div className={`flex justify-between text-primary px-6 pt-1 text-sm ${quicksand.className}`}>
-                    <div className='py-1 px-3 bg-secondary rounded-full font-semibold'>Rants</div>
-                    <div className='text-gray-500'>People</div>
-                    <div className='text-gray-500'>Community</div>
-                </div>
+               
 
             </div>
 
